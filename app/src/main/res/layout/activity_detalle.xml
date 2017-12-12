@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.davidprietorecio.Detalle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tvDTit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nombreProducto"
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                android:layout_weight="2"
+                />
+
+            <TextView
+                android:id="@+id/tvDPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRECIO"
+                android:textColor="@color/rojo"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tvD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Código producto: "
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                />
+
+            <TextView
+                android:id="@+id/tvDcodigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CÓDIGO"
+                android:textColor="@color/rojo"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDDescrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="Descripcion"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/imDimagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/galeria_microcadena1"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/bDAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="atras"
+        android:src="@drawable/back"/>
+
+    <ImageButton
+        android:id="@+id/bDAdelante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="alante"
+        android:src="@drawable/forward"/>
+
+</RelativeLayout>
